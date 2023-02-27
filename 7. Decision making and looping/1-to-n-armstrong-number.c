@@ -11,7 +11,7 @@
 
 void main()
 {
-    int range, num, rem, digit;
+    int i, num, range, rem, digit;
     double sum;
 
     printf("Enter the range: ");
@@ -21,10 +21,10 @@ void main()
     {
         digit = 0;
         sum = 0;
-        for (int i = num; i != 0; i /= 10)
+        for (i = num; i != 0; i /= 10)
             digit++;
 
-        for (int i = num; i != 0; i /= 10)
+        for (i = num; i != 0; i /= 10)
         {
             rem = i % 10;
             sum += pow(rem, digit);
